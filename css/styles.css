@@ -304,20 +304,39 @@ button {
 /* #region Footer */
 .footer {
     background: rgba(var(--navy_blue), 1);
-}
-.footer {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+.footer .container {
+    display: flex;
+}
+
+.footer-logo-paragraph {
+    margin-right: 120px;
+}
+
 .logo-footer {
     display: inline-block;
     color: rgba(var(--cloud), 1);
     padding: 0;
     margin-bottom: 16px;
 }
+
 .footer-paragraph {
     width: 264px;
     color: rgba(var(--cloud), 1);
+}
+
+.social-media-title {
+    font-weight: 500;
+    color: rgba(var(--white), 1);
+    margin-bottom: 16px;
+}
+
+.social-media-list {
+    display: flex;
+    gap: 16px;
 }
 /* #endregion */
 
