@@ -355,7 +355,7 @@ button {
     height: 88px;
     color: rgba(var(--light_slate), 1);
     transition: var(--trans);
-    transition-property: color, border;
+    transition-property: color, border-color;
 }
 
 .customers-icon {
@@ -365,7 +365,7 @@ button {
 .customers-link:hover,
 .customers-link:focus {
     color: rgba(var(--ocean), 1);
-    border: 1px solid rgba(var(--ocean), 1);
+    border-color: rgba(var(--ocean), 1);
 }
 
 /* .customers-icon {
@@ -483,9 +483,38 @@ button {
 
 .portfolio-projects-item {
     width: calc((100% - var(--gap-col) * (var(--card-amount)) - 1) / var(--card-amount));
+    transition: var(--trans);
+    transition-property: box-shadow;
 }
 
-.portfolio-projects-title-wrapper {
+.portfolio-image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    background-color: rgba(var(--iris), 1);
+    color: rgba(var(--cloud), 1);
+    transform: translateY(300px);
+    transition: var(--trans);
+    transition-property: transform;
+}
+
+.portfolio-projects-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-projects-item:hover .overlay {
+    transform: translateY(0);
+}
+
+.portfolio-title-wrapper {
     border: 1px solid rgba(var(--cornflower), 1);
     border-top: none;
 }
