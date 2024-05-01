@@ -123,6 +123,8 @@ button {
 /* Menu */
 .header {
     border-bottom: 1px solid rgba(var(--cornflower), 1);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background: rgba(var(--white), 1);
 }
 
 .header .container {
@@ -267,6 +269,17 @@ button {
     width: 264px;
 }
 
+.advantages-picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 112px;
+    background-color: rgba(var(--cloud), 1);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
 .advantages-paragraph {
     color: rgba(var(--slate), 1);
 }
@@ -288,6 +301,11 @@ button {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     border-radius: 0 0 4px 4px;
 }
+
+.team-item:hover .social-media-link {
+    background-color: rgba(var(--ocean), 1);
+}
+
 .team-name-header {
     text-align: center;
 }
